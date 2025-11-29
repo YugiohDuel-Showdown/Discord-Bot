@@ -11,7 +11,7 @@ export class DiscordClient extends EventEmitter implements IDiscordClient {
   constructor() {
     super();
     this.discord = new Client({
-      intents: IntentsBitField.Flags.Guilds | IntentsBitField.Flags.GuildMessages | IntentsBitField.Flags.MessageContent | IntentsBitField.Flags.GuildMembers,
+      intents: IntentsBitField.Flags.Guilds | IntentsBitField.Flags.GuildMessages | IntentsBitField.Flags.GuildMembers,
     });
     
   }
